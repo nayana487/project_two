@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GardenBuddy</title>
+    <title>Garden Buddy</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
+
+    <nav>
+      <h2><%= link_to "Sign Up", singup_path %> | <%= link_to "Sign In", signin_path %> | <%= link_to "Log Out", logout_path %></h2>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
