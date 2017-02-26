@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20170226200903) do
 
   create_table "plants", force: :cascade do |t|
     t.string  "name"
-    t.string "height"
-    t.string "width"
+    t.integer "height"
+    t.integer "width"
     t.string  "hardiness"
     t.integer "minsoiltemp"
-    t.string "depth"
-    t.string "separation"
+    t.integer "depth"
+    t.integer "separation"
     t.string  "watering"
     t.string  "fertilizing"
     t.string  "maturity"
