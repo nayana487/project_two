@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+earlyspring = Season.create(name: "Early Spring")
+spring = Season.create(name: "Spring")
+latespring = Season.create(name: "Late Spring")
+earlysummer = Season.create(name: "Early Summer")
+summer = Season.create(name: "Summer")
+latesummer = Season.create(name: "Late Summer")
+earlyfall = Season.create(name: "Early Fall")
+fall = Season.create(name: "Fall")
+latefall = Season.create(name: "Late Fall")
+earlywinter = Season.create(name: "Early Winter")
+winter = Season.create(name: "Winter")
+
+Plant.create(name: "Cucumber", height: "48 - 72", width: "15", season: spring, hardiness: "Little", depth: ".5 - 1", separation: "12 - 15", watering: "Frequent", fertilizing: "planting, after bloom, and every 3 weeks", maturity: "50-65", production: "55 - 65", harvest: "6 - 8 in. Before yellow.", img_url: "")
+Plant.create(name: "Tomato", height: "48 - 72", width: "24-36", season: earlyspring, hardiness: "Little", depth: "1-2", separation: "18", watering: "Average", fertilizing: "2 wks prior to and after first harvest", maturity: "70 - 85", production: "28 - 56", harvest: "Completely red, still firm. Pick early or late day.", img_url: "")
+Plant.create(name: "Summer Squash", height: "30 - 40", width: "36 - 48", season: spring, hardiness: "Somewhat", depth: "6 - 8", separation: "12 - 18", watering: "Heavy", fertilizing: "Heavy feeder. Lots of compost. High N", maturity: "60 - 70", production: "60 - 70", harvest: "Before 4 in. long.", img_url: "")
+Plant.create(name: "Zucchini", height: "30 - 40", width: "36 - 48", season: earlyspring, hardiness: "Somewhat", depth: "6 - 8", separation: "12 - 18", watering: "Heavy", fertilizing: "Heavy feeder. Lots of compost. High N", maturity: "60 - 70", production: "60 - 70", harvest: "Before 4 in. long.", img_url: "")
+Plant.create(name: "Malabar Spinach", height: "360 - 400", width: "12", hardiness: "Somewhat", depth: ".25", separation: "18", watering: "Average", fertilizing: "Liquid over seedlings, once", maturity: "", production: "30 - 40", harvest: "Trim leaves and stems as plant matures", img_url: "")
+Plant.create(name: "Basil", height: "18 - 24", width: "18 - 24", season: earlysprint, hardiness: "Little", depth: "6", separation: "16", watering: "Light", fertilizing: "Twice / year", maturity: "30", production: "30", harvest: "Pinch off mature leaves late in the day", img_url: "")
+Plant.create(name: "Rosemany", height: "24 - 36", width: "24 - 36", season: summer, hardiness: "Very", depth: "4 - 6", separation: "36 - 48", watering: "Average - Light", fertilizing: "Minimal", maturity: "Approx. at 6 in.", production: "na", harvest: "Harvest before leaves get hard", img_url: "")
+Plant.create(name: "Thyme", height: ".5 - 1", width: "6 - 18", season: spring, hardiness: "Very", depth: "3 - 5", separation: "6 - 18", watering: "Minimal - Average", fertilizing: "Maybe at planting", maturity: "30 - 40", production: "na", harvest: "Snip off what you need.", img_url: "")
