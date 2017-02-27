@@ -1,5 +1,5 @@
-<h1><%= @season.name %></h1>
-<% @season.plants.each do |plant| %>
+<h1><%= @seasons.name %></h1>
+<% @seasons.plants.each do |plant| %>
   <div class="plant">
     <h2><%= plant.name %></h2>
     <%= image_tag plant.img_url %>

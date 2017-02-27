@@ -5,7 +5,7 @@ class SeasonsController < ApplicationController
   end
 
   def show
-    @seasons = Seasons.find(params[:id])
+    @seasons = Season.find(params[:id])
   end
 
 end
