@@ -1,0 +1,7 @@
+<h1>Planting Seasons</h1>
+<% @seasons.each do |season| %>
+  <div class="house">
+    <h2><%= link_to season.name, season %></h2>
+    <img src="<%= season.img_url %>"/>
+  </div>
+<% end %>
