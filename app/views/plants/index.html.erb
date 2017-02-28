@@ -2,7 +2,7 @@
   <h3><a href="/plants/new">Add a plant</a></h3>
 <% @plants.each do |plant| %>
   <div class="plant">
-    <%= link_to plant.name, plant_path(character) %> - <%= plant.season.name %>
+    <%= link_to plant.name, plant_path(plant) %> - <%= plant.season.name %>
     <p><img src="<%= plant.img_url %>"/></p>
   </div>
   <% end %>
