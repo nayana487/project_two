@@ -10,8 +10,16 @@
   <%= f.label :width %>
   <%= f.text_field :width %>
 
-  <%= f.label :season %>
-  <%= f.text_field :season %>
+  <%#= f.select(:season_id, options_for_select(@season_name)) %>
+
+  <%= collection_select(
+    :plant,
+    :season,
+
+    Season.all,
+    :id,
+    :name,
+    )%>
 
   <%= f.label :hardiness %>
   <%= f.text_field :hardiness %>

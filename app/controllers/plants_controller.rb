@@ -10,6 +10,7 @@ class PlantsController < ApplicationController
 
   def new
     @plant = Plant.new
+    @season_name = Season.all.map { |season| season.name }
   end
 
   def edit
@@ -21,8 +22,9 @@ class PlantsController < ApplicationController
   end
 
   def create
+    # @season = Season.find(params[:season_id])
     @plant = Plant.new(plant_params)
-    @plant.season = Season.find_by(name: params[:plant][:season])
+    @plant.season = Season.all.sample
     @plant.save
     redirect_to plants_path
   end
