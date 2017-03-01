@@ -34,8 +34,9 @@
 }
 
 .aside-1 {
+  text-align: left;
   background: lightgreen;
-  max-width: 100px;
+  max-width: 150px;
 }
 
 
@@ -102,19 +103,20 @@ h2 {
 
 .plant {
   display: inline-block;
-  background-color: #D8AE48;
-  width: 350px;
+  background-color: green;
+  width: 300px;
   text-align: center;
   margin: 10px;
   padding: 10px;
-  border: 10px solid black;
+  border: 5px solid black;
   border-radius: 10%;
 }
 
 .plant img {
-  height: 30px;
-  width: 30px;
-  border: solid black 5px;
+  height: 200px;
+  width: 200px;
+  border: solid black 2px;
+  border-radius: 5%;
 }
 
 .season {

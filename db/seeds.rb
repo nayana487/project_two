@@ -10,7 +10,7 @@ latefall = Season.create(name: "Late Fall")
 earlywinter = Season.create(name: "Early Winter")
 winter = Season.create(name: "Winter")
 
-Plant.create(name: "Cucumber", height: "48 - 72", width: "15", season: spring, hardiness: "Little", depth: ".5 - 1", separation: "12 - 15", watering: "Frequent", fertilizing: "planting, after bloom, and every 3 weeks", maturity: "50-65", production: "55 - 65", harvest: "6 - 8 in. Before yellow.", img_url: "http://bit.ly/2lcxJKa")
+Plant.create(name: "Cucumber", height: "48 - 72", width: "15", season: spring, hardiness: "Little", depth: ".5 - 1", separation: "12 - 15", watering: "Frequent", fertilizing: "planting, after bloom, and every 3 weeks", maturity: "50-65", production: "55 - 65", harvest: "6 - 8 in. Before yellow.", img_url: "")
 Plant.create(name: "Tomato", height: "48 - 72", width: "24-36", season: earlyspring, hardiness: "Little", depth: "1-2", separation: "18", watering: "Average", fertilizing: "2 wks prior to and after first harvest", maturity: "70 - 85", production: "28 - 56", harvest: "Completely red, still firm. Pick early or late day.", img_url: "")
 Plant.create(name: "Summer Squash", height: "30 - 40", width: "36 - 48", season: spring, hardiness: "Somewhat", depth: "6 - 8", separation: "12 - 18", watering: "Heavy", fertilizing: "Heavy feeder. Lots of compost. High N", maturity: "60 - 70", production: "60 - 70", harvest: "Before 4 in. long.", img_url: "")
 Plant.create(name: "Zucchini", height: "30 - 40", width: "36 - 48", season: earlyspring, hardiness: "Somewhat", depth: "6 - 8", separation: "12 - 18", watering: "Heavy", fertilizing: "Heavy feeder. Lots of compost. High N", maturity: "60 - 70", production: "60 - 70", harvest: "Before 4 in. long.", img_url: "")
