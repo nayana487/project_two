@@ -25,7 +25,7 @@ class PlantsController < ApplicationController
   def create
     # @season = Season.find(params[:season_id])
     @plant = Plant.new(plant_params)
-    @plant.season = Season.all.sample
+#    @plant.season = Season.find_by(name: params[:plant][:season])
     @plant.save
     redirect_to plants_path
   end

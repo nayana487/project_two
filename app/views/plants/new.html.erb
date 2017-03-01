@@ -10,9 +10,9 @@
   <%= f.label :width %>
   <%= f.text_field :width %>
 
-  <%#= f.select(:season_id, options_for_select(@season_name)) %>
+  <%= collection_select(:plant, :season_id, Season.all, :id, :name) %>
 
-  <%= collection_select(
+  <%#= collection_select(
     :plant,
     :season,
 
