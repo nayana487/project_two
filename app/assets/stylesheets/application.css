@@ -1,6 +1,78 @@
 
 @import url('https://fonts.googleapis.com/css?family=Kalam:400,700');
 
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 3px;
+  flex: 1 100%;
+}
+
+.header {
+  background: green;
+}
+
+.footer {
+  background: darkgreen;
+}
+
+.main {
+  text-align: center;
+  background: lightgreen;
+}
+
+.aside-1 {
+  background: lightgreen;
+  max-width: 100px;
+}
+
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .footer  { order: 3; }
+}
+
+header, footer,
+nav, main, aside {
+  border: 1px solid black;
+  padding: 0.1em;
+  margin: 0.1em;
+  border-radius: 0.25em;
+}
+
+a {
+  color: white;
+  height: 15px;
+}
+
+header {
+  font-family: "Kalam", Papyrus, fantasy, cursive;
+  text-align: center;
+  font-size: 35px;
+  color: lightgreen;
+  background-color: darkgreen;
+  display: block;
+  height: 50px;
+}
+
 body {
   font-family: "Kalam", Papyrus, fantasy, cursive;
   text-align: center;
@@ -9,8 +81,10 @@ body {
 
 nav {
   padding: 15px;
-  background-color: #D8AE48;
-  border-radius: 40px 0 40px 0;
+  background-color: darkgreen;
+  color: white;
+  height: 15px;
+  text-align: center;
 }
 
 h1 {
@@ -19,6 +93,11 @@ h1 {
 
 h2 {
   font-size: 22px;
+}
+
+.main {
+  background-image: url(http://www.stineseed.com/hp/images/technology/twin20-2.jpg);
+  background-size: cover;
 }
 
 .plant {

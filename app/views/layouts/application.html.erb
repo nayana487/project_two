@@ -6,17 +6,29 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+  </head>
 
-    <nav>
-      <h2><%= link_to "Seasons", seasons_path %> | <%= link_to "Plant Catalogue", plants_path %> </h2>
-    </nav>
+  <div class="wrapper">
+  <header class="header">
+    <div id="head">Garden Buddy</div>
+  </header>
+  <nav>
+    <%= link_to "Seasons", seasons_path %> | <%= link_to "Plant Catalogue", plants_path %>
+  </nav>
+  <body>
 
+    <aside class="aside aside-1">
 
-    <%= yield %>
+    </aside>
+
+    <main class="main">
+      <%= yield %>
+    </main>
   </body>
+
+  <footer class="footer">Footer
+  </footer>
+</div>
 </html>

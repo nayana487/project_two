@@ -9,6 +9,7 @@ class PlantsController < ApplicationController
   end
 
   def new
+    #@season = Season.find(params[:season_id])
     @plant = Plant.new
     @season_name = Season.all.map { |season| season.name }
   end
