@@ -4,3 +4,23 @@
 <h1><%= @plant.name %></h1>
 <h3><%= link_to 'Edit', edit_plant_path%></h3>
 <h3><%= link_to 'Delete', plant_path, :method => :delete, data: {confirm: 'Are you sure?'}%></h3>
+
+<div class="w3-card-4", "plant">
+
+  <div class="w3-container" >
+
+    <div>
+      <div  id="plant_data">Plant Height: <%= @plant.height %> in.</div>
+      <div id="plant_data">Plant Width: <%= @plant.width %> in.</div>
+      <div id="plant_data">Hardiness: <%= @plant.hardiness %></div>
+      <div id="plant_data">Planting Depth: <%= @plant.depth %> in.</div>
+      <div id="plant_data">Separation: <%= @plant.separation %> in.</div>
+      <div id="plant_data">Watering: <%= @plant.watering %></div>
+      <div id="plant_data">Fertilizing: <%= @plant.fertilizing %></div>
+      <div id="plant_data">Plant Maturity: <%= @plant.maturity %> days</div>
+      <div id="plant_data">Productive: <%= @plant.production %> days</div>
+      <div id="plant_data">Harvesting Inst.: <%= @plant.harvest %></div>
+    </div>
+
+  </div>
+</div>
