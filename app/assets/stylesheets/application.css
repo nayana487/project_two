@@ -30,9 +30,11 @@
 }
 
 .aside-1 {
-  text-align: left;
+  text-align: center;
   background: green;
-  max-width: 150px;
+  max-width: 175px;
+  line-height: 1.5;
+  min-height: 450px;
 }
 
 
