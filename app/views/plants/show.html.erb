@@ -4,9 +4,3 @@
 <h1><%= @plant.name %></h1>
 <h3><%= link_to 'Edit', edit_plant_path%></h3>
 <h3><%= link_to 'Delete', plant_path, :method => :delete, data: {confirm: 'Are you sure?'}%></h3>
-
-<h2><%= @plant.season.name %></h2>
-<div class="plant">
-  <%= image_tag @plant.img_url %>
-  Name: <%= @plant.name %>
-</div>
