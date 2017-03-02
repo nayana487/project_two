@@ -48,7 +48,7 @@
 }
 
 html {
-min-height: 740px;
+
 }
 
 header, footer,
@@ -78,6 +78,7 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   color: white;
+  min-height: 700px;
 }
 
 nav {
