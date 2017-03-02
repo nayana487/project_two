@@ -78,7 +78,6 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   color: white;
-  min-height: 700px;
 }
 
 nav {
@@ -104,6 +103,7 @@ h2 {
   max-height: 450px;
   overflow: scroll;
   /*background: lightgreen;*/
+  height: auto;
 }
 
 .w3-container {
