@@ -119,7 +119,7 @@ h2 {
 
 #plant_data {
   display: inline;
-  margin: 0 1em 0 0;
+  margin: 0 1em 0 1em;
 }
 
 .plant {
@@ -149,7 +149,6 @@ h2 {
 }
 
 img {
-
   height: 125px;
   width: 125px;
   float: left;
